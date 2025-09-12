@@ -1,0 +1,11 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build_program",
+            "type": "shell",
+            "command": "gcc",
+            "args": ["-g", "-lm", "${workspaceFolder}/07_reverse_int.c"]
+        }
+    ]
+}
