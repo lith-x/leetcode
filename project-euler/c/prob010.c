@@ -7,9 +7,9 @@ typedef struct {
     long *items;
     int count;
     int capacity;
-} prime_arr_t;
+} PrimeArray;
 
-void append_prime(prime_arr_t *arr, long prime) {
+void append_prime(PrimeArray *arr, long prime) {
     if (sizeof(long) * (arr->count + 1) > arr->capacity) {
         arr->capacity *= 2;
         arr->items = realloc(arr->items, arr->capacity);
@@ -19,7 +19,7 @@ void append_prime(prime_arr_t *arr, long prime) {
 }
 
 int main() {
-    prime_arr_t prime_arr = {
+    PrimeArray prime_arr = {
         malloc(512), 0, 512
     };
     append_prime(&prime_arr, 2);

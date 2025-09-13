@@ -3,10 +3,10 @@
     "tasks": [
         {
             "label": "build",
-            "command": "gcc",
-            "options": {"cwd": "${workspaceFolder}/prob023"},
+            "command": "./debug.sh",
+            "options": {"cwd": "${workspaceFolder}"},
             "type": "shell",
-            "args": ["main.c", "-g", "-o", "main"],
+            "args": ["26", "gmp"],
             "group": "build"
         }
     ]
